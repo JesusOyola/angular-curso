@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { PageComponent } from './page/page.component';
+import { PersonajesComponent } from './personajes/personajes.component';
+import { AgregarComponent } from './agregar/agregar.component';
+import { DbzService } from './services/dbz.service';
+
+
+
+
+@NgModule({
+  declarations: [
+    PageComponent,
+    PersonajesComponent,
+    AgregarComponent
+  ],
+  exports: [
+    PageComponent
+  ],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
+  providers: [
+    DbzService
+  ]
+})
+export class DbzModule { }
